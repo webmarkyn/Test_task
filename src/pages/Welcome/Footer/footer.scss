@@ -1,0 +1,74 @@
+@import '../../../assets/scss/fonts.scss';
+.footer {
+    height: 442px;
+    min-width: 970px;
+    justify-content: center;
+    border-top: 1px solid #e0e2e6;
+    @include ProximaNova(light);
+}
+
+.about {
+    display: flex;
+    padding: 0 80px;
+    height: 370px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #1c2534;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    h3 {
+       margin: 95px 0 35px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 100;
+    }
+
+    p {
+        margin-top: 0;
+        width: 45%;
+        opacity: .75;
+        font-size: 16px;
+    }
+}
+
+.info {
+    border-top: 1px solid #e0e2e6;
+}
+
+.container {
+    height: 72px;
+    display: flex;
+    padding: 0 80px;
+    align-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+    p {
+        margin: auto 0;
+        vertical-align: middle;
+        opacity: .75;
+    }
+}
+
+.links {
+    display: flex;
+    margin-left: auto;
+
+    p {
+        margin-right: 20px; 
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                color: #87b448;
+            }
+        } 
+    }
+}

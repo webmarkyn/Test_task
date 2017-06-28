@@ -9,6 +9,7 @@ class Main extends React.Component {
         this.state= {data: '', error: ''};
         this.componentDidMount = this.componentDidMount.bind(this);
         this.refresh = this.refresh.bind(this);
+        this.getAutoResponsiveProps = this.getAutoResponsiveProps.bind(this);
         
     }
 
@@ -31,6 +32,12 @@ class Main extends React.Component {
 
     refresh() {
         location.reload();
+    }
+
+    getAutoResponsiveProps() {
+        return {
+        itemMargin: 8,
+        };
     }
 
     render() {
@@ -94,15 +101,13 @@ class Main extends React.Component {
                         </div>     
                     </header>
                     <div className={s.content}>
-                        <div className={s.categories}>
-                            {this.state.data ? this.state.data.map((category) => (
-                                <div className={s.category}>
-                                    <div className={s.category__pic}><img src={category.icon} alt={category.title} /></div>
-                                    <p className={s.category__name}>{category.title}</p>
-                                </div>
-                            )) : (<p>Loading</p>)}
-                            
-                            
+                        <div className={s.categories}>               
+                                        {this.state.data ? this.state.data.map((category) => (
+                                                    <div className={s.category}>
+                                                        <div className={s.category__pic}><img src={category.icon} alt={category.title} /></div>
+                                                        <p className={s.category__name}>{category.title}</p>
+                                                    </div>         
+                                        )) : (<p>Loading</p>)}
                         </div>
                     </div>
                 </div>

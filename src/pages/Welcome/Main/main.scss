@@ -1,0 +1,161 @@
+@import '../../../assets/scss/fonts.scss';
+.main {
+    display: flex;
+    height: 815px;
+    background: url('./assets/BG.png');
+    justify-content: center;
+    min-width: 970px;
+    @include ProximaNova(regular);
+}
+
+.container {
+    margin-top: -100px;
+    height: 745px;
+    width: 760px;
+    background: #FFF;
+    border-radius: 5px;
+    padding: 15px;
+    position: relative;
+    border: 1px solid #e0e2e6;
+
+    p {
+        opacity: .6;
+        font-size: 16px;
+    }
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    justify-content: space-between;
+
+    label {
+        width: 100%;
+        display: flex;
+        margin-bottom: 5px;
+        position: relative;
+
+        span {
+            margin-left: auto; 
+        }
+    }
+
+    input, textarea, select {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #e0e2e6;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        position: relative;
+        outline: none;
+    }
+
+    textarea[name="description"] {
+        height: 150px;
+        resize: none;
+    }
+
+    input[name="user_name"], input[name="email"], label[for="user_name"], label[for="email"] {
+        width: 346px;
+    }
+
+    input[type="submit"] {
+        position: absolute;
+        bottom: -85px;left:0;right:0;
+        width: 100%;
+        height: 50px;
+        border: none;
+        background: #87b448;
+        color: #FFF;
+        font-size: 16px;
+        border-radius: 5px;
+
+        &:disabled {
+            opacity: .5;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+input[name="email"].email_error, input[name="user_name"].name_error {
+    border: 1px solid #fb6363;
+}
+
+.error {
+    &:after {
+        position: absolute;
+        left:0;right: 0;
+        text-align: center;
+        color: #fb6363;
+        bottom: -73px;
+        font-size: 12px;
+    }
+}
+
+label.email_error {
+     &:after {
+        @extend .error:after;
+        content: 'Please enter a valid email adress!';
+    }
+}
+
+label.name_error {
+     &:after {
+        @extend .error:after;
+        content: 'Please enter a valid name!';
+    }
+}
+
+.image_upload {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 130px;
+    height: 130px;
+    position: relative;
+    border: 1px solid #e0e2e6;
+    border-radius: 5px;
+    text-align: center;
+
+    h6 {
+        font-size: 16px;
+        opacity: .6;
+        margin: 0;
+    }
+
+    p {
+        font-size: 14px;
+        opacity: .6;
+        margin: 0;
+    }
+
+    input {
+        position: absolute;
+        top:0;right:0;bottom:0;left:0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.image_error {
+    color : #fb6363;
+    margin-top: 5px;
+}
+
+.clear {
+
+}

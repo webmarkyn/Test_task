@@ -1,0 +1,9 @@
+@mixin ProximaNova($style: light) {
+  @if ($style == light) {
+    font-family: "Proxima-Light";
+  }
+
+  @if ($style == regular) {
+    font-family: "Proxima";
+  }
+}
