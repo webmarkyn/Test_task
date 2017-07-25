@@ -58,29 +58,29 @@ class Main extends React.Component {
                         <p className={s.advert__info}>Ads By Denteez.com</p>
                     </div>
                     <div className={s.companies}>
-                        <h3 className={s.title}>Featured Companies <a href="">See All</a></h3>
+                        <h3 className={s.title}><a href="">Featured Companies</a> <a href="#" className={s.title__see_all}>See All</a></h3>
                         <div className={s.company}>
-                            <div className={s.company__pic}><img src={require('./assets/3.png')} alt=""/></div>
+                            <div className={s.company__pic}><a href=""><img src={require('./assets/3.png')} alt="" /></a></div>
                             <div className={s.company__info}>
-                                <h4 className={s.black}>Company Name</h4>
+                                <h4 className={s.black}><a href="">Company Name</a></h4>
                                 <p className={s.grey}>Manufacturer</p>
                                 <p className={s.grey}>Belgrade, Serbia</p>
                                 <a href="#" className={s.black}>Follow now</a>
                             </div>
                         </div>
                         <div className={s.company}>
-                            <div className={s.company__pic}><img src={require('./assets/2.png')} alt="" /></div>
+                            <div className={s.company__pic}><a href=""><img src={require('./assets/2.png')} alt="" /></a></div>
                             <div className={s.company__info}>
-                                <h4 className={s.black}>Company Name</h4>
+                                <h4 className={s.black}><a href="">Company Name</a></h4>
                                 <p className={s.grey}>Service Provider</p>
                                 <p className={s.grey}>New York, USA</p>
                                 <a href="#" className={s.black}>Follow now</a>
                             </div>
                         </div>
                         <div className={s.company}>
-                            <div className={s.company__pic}><img src={require('./assets/1.png')} alt="" /></div>
+                            <div className={s.company__pic}><a href=""><img src={require('./assets/1.png')} alt="" /></a></div>
                             <div className={s.company__info}>
-                                <h4 className={s.black}>Company Name</h4>
+                                <h4 className={s.black}><a href="">Company Name</a></h4>
                                 <p className={s.grey}>Supplier</p>
                                 <p className={s.grey}>London, England</p>
                                 <a href="#" className={s.black}>Follow now</a>
@@ -113,11 +113,11 @@ class Main extends React.Component {
                 </div>
                 <div className={s.right_column}>
                     <div className={s.People}>
-                        <h3 className={s.People__title}>People you may know <a href="">See All</a></h3>
+                        <h3 className={s.People__title}><a href="">People you may know</a> <a href="#" className={s.title__see_all}>See All</a></h3>
                         <div className={s.human}>
-                            <h4 className={s.human__name}>Dennis Adams</h4>
+                            <h4 className={s.human__name}><a href="#">Dennis Adams</a></h4>
                             <div className={s.human__content}>
-                                <div className={s.human__pic}><img src={require('./assets/P1.png')} alt="" /></div>
+                                <div className={s.human__pic}><a href="#"><img src={require('./assets/P1.png')} alt="" /></a></div>
                                 <div className={s.human__info}>
                                     <p className={s.grey}>Dentist (Practice owner)</p>
                                     <p className={s.grey}>London, England</p>
@@ -126,9 +126,9 @@ class Main extends React.Component {
                             </div>
                         </div>
                         <div className={s.human}>
-                            <h4 className={s.human__name}>Mary Carpeter</h4>
+                            <h4 className={s.human__name}><a href="#">Mary Carpeter</a></h4>
                             <div className={s.human__content}>
-                                <div className={s.human__pic}><img src={require('./assets/P2.png')} alt="" /></div>
+                                <div className={s.human__pic}><a href="#"><img src={require('./assets/P2.png')} alt="" /></a></div>
                                 <div className={s.human__info}>
                                     <p className={s.grey}>Dentinst (Practice owner)</p>
                                     <p className={s.grey}>Belgrade, Serbia</p>
@@ -137,9 +137,9 @@ class Main extends React.Component {
                             </div>
                         </div>
                         <div className={s.human}>
-                            <h4 className={s.human__name}>Dennis Adams</h4>
+                            <h4 className={s.human__name}><a href="#">Dennis Adams</a></h4>
                             <div className={s.human__content}>
-                                <div className={s.human__pic}><img src={require('./assets/P3.png')} alt="" /></div>
+                                <div className={s.human__pic}><a href="#"><img src={require('./assets/P3.png')} alt="" /></a></div>
                                 <div className={s.human__info}>
                                     <p className={s.grey}>Dentinst (Practice owner)</p>
                                     <p className={s.grey}>Paris, France</p>
@@ -149,11 +149,11 @@ class Main extends React.Component {
                         </div>
                     </div>
                     <div className={s.Products}>
-                        <h3 className={s.Products__title}>Featured Products <a href="">See All</a></h3>
+                        <h3 className={s.Products__title}><a href="">Featured Products</a> <a href="#" className={s.title__see_all}>See All</a></h3>
                         <div className={s.product}>
-                            <h4 className={s.product__name}>Product name</h4>
+                            <h4 className={s.product__name}><a href="#">Product name</a></h4>
                             <div className={s.product__content}>
-                                <div className={s.product__pic}><img src={require('./assets/U1.png')} alt="" /></div>
+                                <div className={s.product__pic}><a href="#"><img src={require('./assets/U1.png')} alt="" /></a></div>
                                 <div className={s.product__info}>
                                     <p className={s.grey}>Product Short
                                         Description. The quick brown
@@ -164,9 +164,9 @@ class Main extends React.Component {
                             </div>
                         </div>
                         <div className={s.product}>
-                            <h4 className={s.product__name}>Product name</h4>
+                            <h4 className={s.product__name}><a href="#">Product name</a></h4>
                             <div className={s.product__content}>
-                                <div className={s.product__pic}><img src={require('./assets/U2.png')} alt="" /></div>
+                                <div className={s.product__pic}><a href="#"><img src={require('./assets/U2.png')} alt="" /></a></div>
                                 <div className={s.product__info}>
                                     <p className={s.grey}>Product Short 
                                         Description. The quick brown 

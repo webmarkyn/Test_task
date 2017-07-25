@@ -7,7 +7,7 @@ class Header extends React.Component {
         return (
             <header className={s.header}>
                 <div className={s.content}>
-                    <div className={s.logo}><img src={require('./assets/logo.png')} alt=""/></div>
+                    <div className={s.logo}><a href="#"><img src={require('./assets/logo.png')} alt=""/></a></div>
                     <div className={s.search}>
                         <input type="text" placeholder="Company Name" />
                     </div>
